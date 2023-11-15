@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Raj Portfolio</title>  <!------Heading of website--------->
+    <link rel="stylesheet" href="style.css">    <!------link the style css sheet-------->
+    <script src="https://kit.fontawesome.com/9b9776118a.js" crossorigin="anonymous"></script>  <!----icons link of website------>
+</head>
+<body>
+
+    <!--------------------------Header ------------------------------------->
+<div id="header">
+    <div class="container">
+        <div id="menu">
+        <nav>
+            <!--------<img src="image/logo.jpg" class="logo">  ----------logo link (welcome)-------->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                  
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        </div>
+        <div class="header-text">
+            <p>Sakshi Raj</p>      <!------text written in header---------->
+            <hl>Hi, I'm <span>Sakshi</span>, a second-year undergraduate student pursuing B.Tech in<br>Electronics and Communication Engineering-Artificial Intelligence<br>at Indira Gandhi Delhi Technical University for Women.</hl>
+            
+        </div>
+    </div>
+</div>
+
+<!------------about---------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/about.jpg">    <!-------image link----------->
+            </div>
+            <div class="about-col-2">
+                <hl class="sub-title">About Me</hl>   <!-------title------->
+                <p>I’m an avid learner, always willing to learn and experiment with new things. I have very good teamwork coordination as well as leadership qualities. Also, I have good communication skills and want to enhance it more. I might not know everything but I can assure you that I will find the most effective possible solutions.<br>I have an internship in the field of Artificial Intelligence and Machine Learning under the guidance of AI Club at IGDTUW.</p>
+                <div class="tab-titles">       <!-----------sub title-------------->
+                                               <!--------------sub titles name with functions for clicking them-------------------->
+                    <p class="tab-links active-link" onclick="opentab('technical skills')"> Technical Skills</p>      
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-------------------defining subtitles-------------------------->
+                <div class="tab-contents active-tab" id="technical skills">     
+                    <ul>
+                        <li><span>C</span></li>
+                        <li><span>C++</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>DSA</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>Machine Learning</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>AI ML Intern</span><br>AI Club IGDTUW</li>
+                        <li><span>Design & Content Team Coordinator</span><br>Igdtuw Resource</li>
+                        <li><span>Head Coordinator of ECE TECH</span><br>Innerve</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BTECH ECE-AI</span><br>2022-2026<br>IGDTUW</li>
+                        <li><span>XII</span><br>2020-2021<br>KV JNU</li>
+                        <li><span>X</span><br>2018-2019<br>KV JNU</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+
+<!---------------service-------------->
+ 
+<div id="services">
+    <div class="container">
+        <hl class="sub-title">My Projects</hl>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>   <!-------icon link </>---------->
+                <h2><span style=" color: rgb(68, 34, 133);">Movie Recomendation</span></h2><h3>Minor Project</h3><br>
+                <p>To analyse the 'Movie Recommendation' dataset, which includes movies from seven genres and their ratings, etc. This project's outcome will help and enhance the decision-making process for many movie-goers, offering valuable insights into the quality and enjoyment of a particular movie.</p>
+                <!--------<a href="#">Learn more</a>--------->   <!------link for learn more about project--------->
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>   <!-------icon link </>---------->
+                <h2><span style=" color: rgb(68, 34, 133);">Multi-Complication Diabetes Detection Model</span></h2><h3>Major Project</h3><br>
+                <p> Created a unified model for early diabetes detection and related
+                complications (e.g., heart disease, vision loss, kidney issues) to improve patient outcomes through timely diagnosis and medical interventions.</p>
+                <!--------<a href="#">Learn more</a>--------->   <!------link for learn more about project--------->
+            </div>
+
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-----------contact------------------->
+<div id="contact">
+    <div class="conatainer">
+        <div class="row">
+            <div class="contact-left">
+                <hl class="sub-title">Contact Me</hl>
+                <p><i class="fa-solid fa-envelope"></i>sakshiraj713@gmail.com</p>  <!---icon link and email---------->
+                <p><i class="fa-solid fa-phone"></i>9891169770</p>                  <!---icon link and phone ------>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sakshi-raj-140a20249"><i class="fa-brands fa-linkedin"></i></a>    <!-----link of social media and icon link------->
+                    <a href="https://github.com/isakshiraj"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/isakshiraj?t=2yGl_uHzkqls7r1xFzIAJA&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/i.sakshiraj/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <!-------<a href="image/file name.pdf" download class="btn btn2">Download CV</a>------->      
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thanks for visiting!</p>
+    </div>
+</div>
+
+<!-----first code before event--for removing content when clicking on skill experience education button---------->
+<!-----second code after event-----giving single output when click on particular button------------------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    
+        event.currentTarget.classList.add("active-link");       
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<!------------------------form setup for taking response-------------------------------cont scriptURL: link of excel after deploying------------->   
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzkeJ4XLJecSd8-vyqHQwPB_y05UvF5GBeNVy4jnbnfFFbbxXhEaRkrbxMCmKmUv4iPFw/exec'    
+    const form = document.forms['submit-to-google-sheet']
+    
+    const msg = document.getElementById("msg")
+
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+      
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    
+  </script>    
+</body>
+</html>
