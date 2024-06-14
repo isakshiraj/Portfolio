@@ -9,18 +9,111 @@ html{
    scroll-behavior: smooth;       /************************for scrolling directly after clicking home about projects contacts*******************************/
 }
 body{
-    background: black;
-    color: #fff;
+    background: linear-gradient(to right, rgb(179, 227, 245), rgb(250, 198, 206));
+    color: black;
 }
 
 /*************************header*************************************/
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(image/imghome.jpg);
     background-size: cover;
-    background-position: center;   
+    background-position: center;  
 }
+
+/****************************portfolio photo*********/
+/* home section styling */
+
+.home {
+    height: 90vh;
+    width: 100%;
+    /*background-image: url("image/backgroundimg.jpg"); Adjust the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .home .home-content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Aligns items with space between them */
+    align-items: center; /* Vertically centers items */
+  }
+  
+  .home .text {
+    max-width: 100%; /* Adjust based on your preference */
+  }
+  
+  .home .home-photo {
+    max-width: 50%; /* Adjust based on your preference */
+    text-align: right; /* Aligns the image to the right */
+  }
+  
+  .home .home-photo img {
+    max-width: 50%; /* Ensures the image does not exceed its container */
+    height: auto;
+  }
+  
+  .home .text-one {
+    font-size: 50px;
+    color: #0E2431;
+  }
+  
+  .home .text-two {
+    color: #0E2431;
+    font-size: 100px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  
+  .home .text-three {
+    font-size: 40px;
+    margin: 5px 0;
+    color: #4070f4;
+  }
+  
+  .home .text-four {
+    font-size: 23px;
+    margin: 5px 0;
+    color: #0E2431;
+  }
+
+.home .button{
+  margin: 14px 0;
+}
+
+.home .button a{
+    text-decoration: none;
+    color: #fff;
+}
+.home .button button a:hover{
+    border-color: #4070f4;
+    background-color: #fff;
+    color: #4070f4;
+  }
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+/****************************portfolio photo end*********/
+
+
 .container{
     padding: 10px 10%; /*10px space from left side and 10% from top*/
 }
@@ -28,9 +121,10 @@ body{
 #menu{
     top: 0;
     position: fixed;
-    width: 120%;
-    margin-left: -130px;
-    background: linear-gradient(to right, skyblue , lightgreen);
+    width: 100%;
+    margin-left: -160px;
+    background: #4070f4;
+   
 }
 /*nav{
     display: flex; if two symbols are there then after flex it will be side by side
@@ -90,8 +184,9 @@ nav ul li a:hover::after{
 
 /********about***********/
 #about{
-    padding: 80px;
-    color: #ababab;
+    padding: 40px;
+    color: black;
+    height: 100hv;
 
 }
 .row{
@@ -110,11 +205,13 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+    font-size: 18px;
+    height: 60vh;
 }
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: black;
 
 }
 .tab-titles{
@@ -141,6 +238,7 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 50%;
 }
+
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
@@ -148,7 +246,8 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /*************skill, experience, education section over**********************/
@@ -173,6 +272,7 @@ nav ul li a:hover::after{
 
 #services{
     padding: 30px 0;
+    height: 90vh;
 }
 
 .services-list{
@@ -184,8 +284,8 @@ nav ul li a:hover::after{
 
 /******box movie recomendation*******/
 .services-list div{
-    background: darkcyan;
-    width: 60%;
+    background: rgb(155, 239, 239);
+    width: 100%;
     padding: 20px;
     font-size: 13px;
     font-weight: 300;
@@ -199,7 +299,7 @@ nav ul li a:hover::after{
     margin-bottom: 30px;
 }
 .services-list div h2{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -216,10 +316,15 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
+    color: #fff;
 }
 
 
+
 /**************contacts******************/
+#contact{
+    height: 70hv;
+}
 .contact-left{
     flex-basis: 40%;
     margin-left: 110px;
@@ -230,6 +335,7 @@ nav ul li a:hover::after{
 .contact-left p{
     margin-top: 30px;
     margin-left: 5px;
+    font-size: 25px;
 
 }
 .contact-left p i{
@@ -244,7 +350,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: whitesmoke;
+    color: black;
     display: inline-block;
     transition: transform 0.5s;
 
@@ -274,7 +380,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: linear-gradient(lightpink, skyblue);
+    background: #fff;
     padding: 15px;
     margin: 15px 0;
     color: #444;
@@ -300,10 +406,10 @@ form .btn2{
     font-weight: 900;
     width: 100%;
     text-align: center;
-    padding: 25px 0;
-    background: linear-gradient(to right, skyblue, lightgreen);
+    padding: 10px 0;
+    background: #4070f4;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 /***********
@@ -437,7 +543,7 @@ nav .fa-solid{
 
 /*********agter submitting  will print*************/
 #msg{
-    color: #61b752;
+    color: #031101;
     margin-top: 10px;
     display: block;
 }
