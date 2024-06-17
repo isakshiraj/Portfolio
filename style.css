@@ -480,6 +480,7 @@ nav .fa-solid {
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        margin-left: 320px;
         
     }
 
@@ -489,11 +490,11 @@ nav .fa-solid {
     }
    
     #menu {
-        top: 10px;
+        top: 0;
         position: fixed;
         width: 100%;
-        margin-left: 280px; 
-        background: pink;    
+        margin-left: -45px; 
+        background: linear-gradient(to right, skyblue, pink);    
     }
    
     nav ul{
