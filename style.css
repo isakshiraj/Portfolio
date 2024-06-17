@@ -484,7 +484,7 @@ nav .fa-solid {
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 1000;
+        z-index: 10000;
         color: #031101;
         font-weight: 600;
     }
@@ -588,8 +588,10 @@ nav .fa-solid {
     .tab-links {
         font-size: 16px;
         margin-right: 20px;
-        z-index: -1;
+        font-weight: 600;
     }
+   
+   
     
     #services{
         margin-top: 90px;
