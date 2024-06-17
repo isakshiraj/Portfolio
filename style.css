@@ -53,18 +53,7 @@ body {
     /* Adjust based on your preference */
 }
 
-.home .home-photo {
-    max-width: 50%;
-    /* Adjust based on your preference */
-    text-align: right;
-    /* Aligns the image to the right */
-}
 
-.home .home-photo img {
-    max-width: 50%;
-    /* Ensures the image does not exceed its container */
-    height: auto;
-}
 
 .home .text-one {
     font-size: 50px;
