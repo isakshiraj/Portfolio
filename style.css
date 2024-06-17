@@ -1,24 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 
 }
-html{
-   scroll-behavior: smooth;       /************************for scrolling directly after clicking home about projects contacts*******************************/
+
+html {
+    scroll-behavior: smooth;
+    /************************for scrolling directly after clicking home about projects contacts*******************************/
 }
-body{
+
+body {
     background: linear-gradient(to right, rgb(179, 227, 245), rgb(250, 198, 206));
     color: black;
 }
 
 /*************************header*************************************/
-#header{
+#header {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: center;  
+    background-position: center;
 }
 
 /****************************portfolio photo*********/
@@ -32,100 +35,113 @@ body{
     background-position: center;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-  }
-  
-  .home .home-content {
+}
+
+.home .home-content {
     width: 90%;
     height: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between; /* Aligns items with space between them */
-    align-items: center; /* Vertically centers items */
-  }
-  
-  .home .text {
-    max-width: 100%; /* Adjust based on your preference */
-  }
-  
-  .home .home-photo {
-    max-width: 50%; /* Adjust based on your preference */
-    text-align: right; /* Aligns the image to the right */
-  }
-  
-  .home .home-photo img {
-    max-width: 50%; /* Ensures the image does not exceed its container */
+    justify-content: space-between;
+    /* Aligns items with space between them */
+    align-items: center;
+    /* Vertically centers items */
+}
+
+.home .text {
+    max-width: 100%;
+    /* Adjust based on your preference */
+}
+
+.home .home-photo {
+    max-width: 50%;
+    /* Adjust based on your preference */
+    text-align: right;
+    /* Aligns the image to the right */
+}
+
+.home .home-photo img {
+    max-width: 50%;
+    /* Ensures the image does not exceed its container */
     height: auto;
-  }
-  
-  .home .text-one {
+}
+
+.home .text-one {
     font-size: 50px;
     color: #0E2431;
-  }
-  
-  .home .text-two {
+}
+
+.home .text-two {
     color: #0E2431;
     font-size: 100px;
     font-weight: 600;
     margin-left: -3px;
-  }
-  
-  .home .text-three {
+}
+
+.home .text-three {
     font-size: 40px;
     margin: 5px 0;
     color: #4070f4;
-  }
-  
-  .home .text-four {
+}
+
+.home .text-four {
     font-size: 23px;
     margin: 5px 0;
     color: #0E2431;
-  }
-
-.home .button{
-  margin: 14px 0;
 }
 
-.home .button a{
+.home .button {
+    margin: 14px 0;
+}
+
+.home .button a {
     text-decoration: none;
     color: #fff;
 }
-.home .button button a:hover{
+
+.home .button button a:hover {
     border-color: #4070f4;
     background-color: #fff;
     color: #4070f4;
-  }
-.home .button button{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 25px;
-  font-weight: 400;
-  background: #4070f4;
-  color: #fff;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
 }
-.home .button button:hover{
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
+
+.home .button button {
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #4070f4;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
 }
+
+.home .button button:hover {
+    border-color: #4070f4;
+    background-color: #fff;
+    color: #4070f4;
+}
+
 /****************************portfolio photo end*********/
 
 
-.container{
-    padding: 10px 10%; /*10px space from left side and 10% from top*/
+.container {
+    padding: 10px 10%;
+    /*10px space from left side and 10% from top*/
 }
 
-#menu{
+#menu {
     top: 0;
     position: fixed;
     width: 100%;
     margin-left: -160px;
     background: #4070f4;
-   
+    margin-right: -110px;
+
 }
+
 /*nav{
     display: flex; if two symbols are there then after flex it will be side by side
     display: flex;
@@ -138,19 +154,20 @@ body{
 /*.logo{
     width: 140px;
 }*/
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -161,7 +178,8 @@ nav ul li a::after{
     transition: 0.5s;
 
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -169,63 +187,73 @@ nav ul li a:hover::after{
 
 
 
-.header-text{
+.header-text {
     margin-top: 20%;
     font-size: 30px;
 }
-.header-text hl{
+
+.header-text hl {
     font-size: 20px;
     margin-top: 20px;
 
 }
-.header-text hl span{
+
+.header-text hl span {
     color: #ff004f;
 }
 
 /********about***********/
-#about{
+#about {
     padding: 40px;
     color: black;
     height: 100hv;
 
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
-.about-col-1{
+
+.about-col-1 {
     flex-basis: 35%;
 
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
-.about-col-2{
+
+.about-col-2 {
     flex-basis: 60%;
     font-size: 18px;
     height: 60vh;
 }
-.sub-title{
+
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: black;
 
 }
-.tab-titles{
+
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -235,16 +263,18 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 
 }
-.tab-contents ul li span{
+
+.tab-contents ul li span {
     color: #b54769;
     font-size: 20px;
     font-weight: 600;
@@ -255,14 +285,14 @@ nav ul li a:hover::after{
 
 
 /*******Now hiding content as all the content come along with all*********/
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
 /****fixing this issue*****/
 
 /*****skill section*****/
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
@@ -270,12 +300,12 @@ nav ul li a:hover::after{
 
 /********* Projects (services) section start**************/
 
-#services{
+#services {
     padding: 30px 0;
     height: 90vh;
 }
 
-.services-list{
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -283,26 +313,29 @@ nav ul li a:hover::after{
 }
 
 /******box movie recomendation*******/
-.services-list div{
+.services-list div {
     background: rgb(155, 239, 239);
     width: 100%;
     padding: 20px;
     font-size: 13px;
     font-weight: 300;
-    border-radius: 10px;   /***corners will round***/
+    border-radius: 10px;
+    /***corners will round***/
     transition: background 0.5s, transform 0.5s;
 }
 
 /*********************icon************************************/
-.services-list div i{
-    font-size:50px;
+.services-list div i {
+    font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 15px;
 }
+
 /***************learn more about project**********
 .services-list div a{
     text-decoration: none;
@@ -313,7 +346,7 @@ nav ul li a:hover::after{
 }***************/
 
 /**box color movie recomendation box************cursor click then become red*************************/
-.services-list div:hover{
+.services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
     color: #fff;
@@ -322,31 +355,37 @@ nav ul li a:hover::after{
 
 
 /**************contacts******************/
-#contact{
+#contact {
     height: 70hv;
 }
-.contact-left{
+
+.contact-left {
     flex-basis: 40%;
     margin-left: 110px;
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 50%;
 }
-.contact-left p{
+
+.contact-left p {
     margin-top: 30px;
     margin-left: 5px;
     font-size: 25px;
 
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+
+.social-icons {
     margin-top: 30px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -357,26 +396,27 @@ nav ul li a:hover::after{
 }
 
 /******************cursor go then icon become red*************************/
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 
 }
 
 /***********for both download cv and submit button************************/
-.btn.btn2{ 
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
-}    
+}
 
 
 
 /*******form***************/
-.contact-right form{
+.contact-right form {
     width: 95%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -392,7 +432,7 @@ form input, form textarea{
 
 /*********submit button***********/
 
-form .btn2{
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -401,7 +441,7 @@ form .btn2{
 }
 
 /*******************copyright in the last*************************/
-.copyright{
+.copyright {
     color: black;
     font-weight: 900;
     width: 100%;
@@ -412,6 +452,7 @@ form .btn2{
     margin-top: 10px;
 
 }
+
 /***********
 .copyright i{
     color: #fff;
@@ -423,128 +464,218 @@ form .btn2{
 
 timing 1:32 to 1: 45 ***************/
 
-nav .fa-regular{
+nav .fa-regular {
     display: none;
 }
-nav .fa-solid{
-    display: none;
-}
-@media only screen and (max-width: 600px){
-    #header{
-        background-image: url(image/phonebgimg.jpg);
 
-    }
-    .header-text p{
-        
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for small screens */
+    
+ 
+
+    nav .fa-solid{
+        display: block;
         font-size: 25px;
-        text-align: center;
-    }
-    .header-text {
-        font-size: 5px;
-        text-align: center;
-        margin-top: 400px;
+        
     }
 
     nav .fa-regular{
         display: block;
-        font-size: 20px;
+        font-size: 25px;
     }
-    nav .fa-solid{
-        display: block;
-        font-size: 20px;
+   
+    #menu {
+        top: 10px;
         position: fixed;
-        top: 25px;
-        left: 320px;
-        cursor: pointer;
+        width: 100%;
+        margin-left: 280px; 
+        background: pink;    
     }
+   
     nav ul{
-        background: linear-gradient(to right, skyblue, pink);
+        background: linear-gradient(to right, pink, skyblue);
         position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
-        height: 40vh;
-        padding-top: 30px;
-        z-index: 2;
-        transition: right 0.5s;
-        color: #444;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1000;
+        color: #031101;
+        font-weight: 600;
     }
+    
     nav ul li{
         display: block;
         margin: 25px;
     }
+
+    nav ul li a {
+        color: black;
+    }
+
     nav ul .fa-regular{
-        position: absolute;
+        position:absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    .sub-title{
+
+    
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
+ 
+   
+    .home-content .text {
+        order: 2;
+    }
+
+    .home-content .text-one {
+        font-size: 20px;
+    }
+
+    .home-content .text-two {
         font-size: 30px;
     }
-    .about-col-1, .about-col-2{
+
+    .home-content .text-three {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .home-content .text-four {
+        font-size: 15px;
+    }
+
+    .home-content .button button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .homephoto{    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Default width */
+    height: auto;
+    z-index: -1;
+    }
+
+
+
+   
+
+    .sub-title {
+        font-size: 40px;
+    }
+    
+    .about{
+        width: 400px;
+        
+    }
+
+
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 250%;
         margin-left: -40px;
     }
-    .about-col-1{
+
+    .about-col-1 {
         margin-bottom: 30px;
 
     }
-    .about-col-2{
+
+    .about-col-2 {
         font-size: 16px;
         margin-left: -40px;
     }
-    .tab-links{
+
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
+        z-index: -1;
     }
-    .services-list div{
-        width: 80%;
+    
+    #services{
+        margin-top: 90px;
+        width: 300px;
+        margin-bottom: 600px;
     }
-    .services-list div i{
-        font-size:40px;
+    .services-list div {
+        width: 120%;
+        
+    }
+
+    .services-list div i {
+        font-size: 40px;
         margin-bottom: 30px;
     }
-    .services-list div h2{
+
+    .services-list div h2 {
         font-size: 30px;
         font-weight: 500;
         margin-bottom: 15px;
     }
-    .services-list div h3{
+
+    .services-list div h3 {
         font-size: 20px;
     }
-    .services-list div p{
+
+    .services-list div p {
         font-size: 14px;
     }
-    .contact-left, .contact-right{
+
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
-    .contact-left{
+
+    .contact-left {
         font-size: 30px;
         margin-left: 35px;
+        margin-bottom: 50px;
     }
-    .contact-left p{
+
+    .contact-left p {
         font-size: 16px;
     }
-    form input, form textarea{
+
+    form input,
+    form textarea {
         width: 80%;
-        margin-left: 25px ;
-    }
-    form .btn2{
         margin-left: 25px;
     }
-    #msg{
+
+    form .btn2 {
+        margin-left: 25px;
+    }
+
+    #msg {
         margin-left: 25px;
         margin-bottom: 10px;
     }
-    
+
 }
 
 
 /*********agter submitting  will print*************/
-#msg{
+#msg {
     color: #031101;
     margin-top: 10px;
     display: block;
 }
-
