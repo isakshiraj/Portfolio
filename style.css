@@ -83,16 +83,6 @@ body {
     margin: 14px 0;
 }
 
-.home .button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.home .button button a:hover {
-    border-color: #4070f4;
-    background-color: #fff;
-    color: #4070f4;
-}
 
 .home .button button {
     outline: none;
