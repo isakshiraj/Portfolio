@@ -63,13 +63,13 @@ body {
 
 .home .text-two {
     color: #0E2431;
-    font-size: 100px;
+    font-size: 85px;
     font-weight: 600;
     margin-left: -3px;
 }
 
 .home .text-three {
-    font-size: 40px;
+    font-size: 35px;
     margin: 5px 0;
     color: #4070f4;
 }
@@ -89,7 +89,7 @@ body {
     outline: none;
     padding: 8px 16px;
     border-radius: 6px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
     background: #4070f4;
     color: #fff;
@@ -201,6 +201,7 @@ nav {
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
+    margin-top: 20px;
 }
 
 .about-col-2 {
