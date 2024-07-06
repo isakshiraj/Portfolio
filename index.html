@@ -16,7 +16,7 @@
 
     <!--------------------------Header ------------------------------------->
     <section id="header">
-        <div class="container">
+        <div class="containersNav">
             <div id="menu">
                 <nav>
                     <!--------<img src="image/logo.jpg" class="logo">  ----------logo link (welcome)-------->
@@ -25,9 +25,9 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                        <i class="fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
                     </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
                 </nav>
             </div>
         </div>
@@ -41,7 +41,7 @@
                         IGDTUW'26</div>
                     <div class="text-four">New Delhi, India</div>
                     <div class="button">
-                        <a href="Sakshi_Raj resume (till 4th semester).pdf" target="_main"><button>Download Resume</button></a>
+                        <a href="Sakshi_Raj resume (till 4th semester).pdf" target="_main"><button>Resume</button></a>
                     </div>
                 </div>
                 <div class="home-photo">
@@ -257,16 +257,18 @@
     <!----------sidebar------------------>
 
     <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0";
+        function openMenu() {
+            document.getElementById('sidemenu').style.right = '0';
+            document.querySelector('.fa-solid').style.display = 'none';
+            document.querySelector('.fa-regular').style.display = 'block';
         }
-
-        function closemenu() {
-            sidemenu.style.right = "-200px";
+        
+        function closeMenu() {
+            document.getElementById('sidemenu').style.right = '-200px';
+            document.querySelector('.fa-solid').style.display = 'block';
+            document.querySelector('.fa-regular').style.display = 'none';
         }
-
-    </script>
+        </script>
 </body>
 
 </html>
